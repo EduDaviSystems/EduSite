@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif, Arial, Helvetica;
+    cursor: url('assets/NORMAL.cur'), auto;
+
+    
+}
+input{
+    outline: none;    
+}
+.hidden {
+    display: none;
+}
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #ffd900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    z-index: 1;
+}
+
+
+button{
+    border: 0;
+    width: 200px;
+    height: 50px;
+    background: rgb(64, 154, 196);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+#siteHeader {
+    background: transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, 25%);
+    display: flex;
+    height: 48px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+#siteHeader .menu {
+     display: flex;
+}
+
+svg:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all ease-in-out .5s;
+    border-bottom: 5px solid white;
+}
+#siteHeader #pgmsg {
+    width: 500px;
+    border: none;
+
+}
+#site{
+    width: 100vw;
+    height: calc(100vh - 48px);
+    top: 48px;
+    z-index: 1;
+}
